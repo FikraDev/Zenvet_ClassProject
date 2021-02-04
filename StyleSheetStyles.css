@@ -1,0 +1,51 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #183153;
+}
+
+.hdr-div {
+    padding: 0 45px 0 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #183153;
+}
+
+.nav {
+    display: flex;
+}
+
+.headerTxt1 {
+    font-size: 3rem;
+    font-style: italic;
+    color: #ffd43b;
+    font-weight: bold;
+}
+
+.headerLnk {
+    text-decoration: none;
+    color: #ffd43b;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-left: 150px;
+}
+
+footer {
+    color: #fff;
+    background-color: #f47c4b;
+    height: 100px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.errorMessageLabel{
+    margin-top:20px;
+    margin-bottom:20px;    
+    font-weight:bold;
+    font-size:18px;
+}
