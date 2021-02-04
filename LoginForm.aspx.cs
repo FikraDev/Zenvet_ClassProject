@@ -15,11 +15,14 @@ namespace ZenVet_20191021
     {
         String str = ConfigurationManager.ConnectionStrings["newconn"].ConnectionString;
         SqlConnection conn = new SqlConnection();
-        
+     
         protected void Page_Load(object sender, EventArgs e)
         {           
             conn.ConnectionString = str;
             ErrorMessage.Visible = true;
+
+            string pwd = txtPassword.Text; //prevents the password from being cleared when ddlist selection is made
+            txtPassword.Attributes.Add("value", pwd); 
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
@@ -43,12 +46,14 @@ namespace ZenVet_20191021
                     SqlDataReader drdr;
                     SiteLibrary mylib = new SiteLibrary();
 
-                    string getEmployee = @"select EmpId,FirstName,LastName,DOB,Address,Email,TelephoneNumber,Position from tblEmployees inner join tblLogin on tblLogin.UsrName=tblEmployees.EmpId";
+                    string getEmployee = @"select EmpId,FirstName,LastName,DOB,Address,Email,TelephoneNumber,Position from tblEmployees inner join tblLogin on tblLogin.UsrName=tblEmployees.EmpId and tblLogin.UserType=tblEmployees.Position";
 
+                    
                     drdr = mylib.ExecuteSearch(getEmployee);
 
                     if (drdr.Read() == true)
-                    {
+                    {                        
+
                         if (selectList.SelectedValue == "1")
                         {
                             Response.Redirect("https://www.cnn.com");
@@ -66,7 +71,7 @@ namespace ZenVet_20191021
                             Response.Redirect("https://www.foxsports.com");
                         }
                     }
-                    
+
                 }
                 else
                 {
