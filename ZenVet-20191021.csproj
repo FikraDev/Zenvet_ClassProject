@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AppointmentSelectionForm.aspx" />
+    <Content Include="Employees.aspx" />
     <Content Include="Global.asax" />
     <Content Include="LoginForm.aspx" />
     <Content Include="MedicalForm.aspx" />
@@ -83,6 +84,13 @@
     </Compile>
     <Compile Include="AppointmentSelectionForm.aspx.designer.cs">
       <DependentUpon>AppointmentSelectionForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employees.aspx.cs">
+      <DependentUpon>Employees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employees.aspx.designer.cs">
+      <DependentUpon>Employees.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
