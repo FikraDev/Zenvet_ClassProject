@@ -99,8 +99,8 @@
                 </div>
 
                 <asp:ValidationSummary ID="MySummary" runat="server" ForeColor="Red" />
-        </div>
+       
         </form>
     </div>
-    </div>
+    
 </asp:Content>

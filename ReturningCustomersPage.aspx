@@ -12,64 +12,64 @@
 
                 <asp:Literal runat="server"><h2 class="RetCustTitle_2">Returning Customers</h2></asp:Literal>
 
-                <div class="div1">
+                <div class="rcdiv1">
 
-                    <asp:Label ID="label0" Text="Pet Identification No." runat="server" CssClass="lblLabels" />
-                    <asp:TextBox runat="server" CssClass="txtInputs" ID="txtPetID" MaxLength="25"></asp:TextBox>
+                    <asp:Label ID="label0" Text="Pet Identification No." runat="server" CssClass="rclblLabels" />
+                    <asp:TextBox runat="server" CssClass="rcInputs" ID="txtPetID" MaxLength="25"></asp:TextBox>
 
                     <asp:RequiredFieldValidator ID="rvfPID" runat="server" ErrorMessage="Pet ID Required!" ForeColor="Red" ControlToValidate="txtPetID">*</asp:RequiredFieldValidator>
                 </div>
 
-                <div class="div2">
+                <div class="rcdiv1">
 
-                    <asp:Label ID="Label1" Text="Owners Name" runat="server" CssClass="lblLabels" />
+                    <asp:Label ID="Label1" Text="Owners Name" runat="server" CssClass="rclblLabels" />
 
-                    <asp:TextBox runat="server" CssClass="txtInputs" ID="txtOwner" MaxLength="255"></asp:TextBox>
+                    <asp:TextBox runat="server" CssClass="rcInputs" ID="txtOwner" MaxLength="255"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvOwner" runat="server" ErrorMessage="Owner's Name Required!" ForeColor="Red" ControlToValidate="txtOwner">*</asp:RequiredFieldValidator>
 
                 </div>
 
-                <div class="div3">
+                <div class="rcdiv1">
 
-                    <asp:Label ID="Label2" Text="Gender" runat="server" CssClass="lblLabels" />
+                    <asp:Label ID="Label2" Text="Gender" runat="server" CssClass="rclblLabels" />
 
-                    <asp:TextBox runat="server" CssClass="txtInputs" ID="txtGender" MaxLength="1"></asp:TextBox>
+                    <asp:TextBox runat="server" CssClass="rcInputs" ID="txtGender" MaxLength="1"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvGender" runat="server" ErrorMessage="Gender Required!" ForeColor="Red" ControlToValidate="txtGender">*</asp:RequiredFieldValidator>
 
                 </div>
 
-                <div class="div4">
+                <div class="rcdiv1">
 
-                    <asp:Label ID="Label3" Text="Telephone Number" runat="server" CssClass="lblLabels" />
+                    <asp:Label ID="Label3" Text="Telephone Number" runat="server" CssClass="rclblLabels" />
 
-                    <asp:TextBox runat="server" CssClass="txtInputs" ID="txtNumber" MaxLength="12"></asp:TextBox>
+                    <asp:TextBox runat="server" CssClass="rcInputs" ID="txtNumber" MaxLength="12"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvTel" runat="server" ErrorMessage="Tel No.Required!" ForeColor="Red" ControlToValidate="txtNumber">*</asp:RequiredFieldValidator>
 
                 </div>
 
-                <div class="div5">
+                <div class="rcdiv1">
 
-                    <asp:Label ID="Label4" Text="Address" runat="server" CssClass="lblLabels" />
+                    <asp:Label ID="Label4" Text="Address" runat="server" CssClass="rclblLabels" />
 
-                    <asp:TextBox runat="server" CssClass="txtInputs" ID="txtAddress" MaxLength="255"></asp:TextBox>
+                    <asp:TextBox runat="server" CssClass="rcInputs" ID="txtAddress" MaxLength="255"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvAddr" runat="server" ErrorMessage="Address Required!" ForeColor="Red" ControlToValidate="txtAddress">*</asp:RequiredFieldValidator>
                 </div>
 
 
-                <div class="div6">
+                <div class="rcdiv1">
 
-                    <asp:Label ID="Label5" Text="Breed" runat="server" CssClass="lblLabels" />
+                    <asp:Label ID="Label5" Text="Breed" runat="server" CssClass="rclblLabels" />
 
-                    <asp:TextBox runat="server" CssClass="txtInputs" ID="txtBreed" MaxLength="255"></asp:TextBox>
+                    <asp:TextBox runat="server" CssClass="rcInputs" ID="txtBreed" MaxLength="255"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvBreed" runat="server" ErrorMessage="Breed Required!" ForeColor="Red" ControlToValidate="txtBreed">*</asp:RequiredFieldValidator>
 
                 </div>
 
-                <div class="div7">
+                <div class="rcdiv1">
 
-                    <asp:Label ID="Label6" Text="Email Address" runat="server" CssClass="lblLabels" />
+                    <asp:Label ID="Label6" Text="Email Address" runat="server" CssClass="rclblLabels" />
 
-                    <asp:TextBox runat="server" CssClass="txtInputs" ID="txtemail" MaxLength="255"></asp:TextBox>
+                    <asp:TextBox runat="server" CssClass="rcInputs" ID="txtemail" MaxLength="255"></asp:TextBox>
 
                     <asp:RequiredFieldValidator ID="rvfEmail" runat="server" ErrorMessage="Email Field!" ForeColor="Red" ControlToValidate="txtemail">*</asp:RequiredFieldValidator>
 
@@ -77,11 +77,11 @@
 
                 </div>
 
-                <div class="div8">
+                <div class="rcdiv1">
 
-                    <asp:Label ID="Label7" Text="Appointment Date" runat="server" CssClass="lblLabels" />
+                    <asp:Label ID="Label7" Text="Appointment Date" runat="server" CssClass="rclblLabels" />
 
-                    <asp:TextBox runat="server" CssClass="txtInputs" ID="txtApptDate" MaxLength="255"></asp:TextBox>
+                    <asp:TextBox runat="server" CssClass="rcInputs" ID="txtApptDate" MaxLength="255"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvApptDate" runat="server" ErrorMessage="Date Required!" ForeColor="Red" ControlToValidate="txtApptDate">*</asp:RequiredFieldValidator>
 
                     <asp:RegularExpressionValidator ValidationExpression="^([0-9]|0[1-9]|1[012])\/([0-9]|0[1-9]|[12][0-9]|3[01])\/(19|20)\d\d$"
@@ -90,24 +90,24 @@
 
                 </div>
 
-                <div class="div8">
+                <div class="rcdiv1">
 
-                    <asp:Label ID="Label9" Text="Appointment Time" runat="server" CssClass="lblLabels" />
+                    <asp:Label ID="Label9" Text="Appointment Time" runat="server" CssClass="rclblLabels" />
 
-                    <asp:TextBox runat="server" CssClass="txtInputs" ID="txtApptTime" MaxLength="255"></asp:TextBox>
+                    <asp:TextBox runat="server" CssClass="rcInputs" ID="txtApptTime" MaxLength="255"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvTime" runat="server" ErrorMessage="Time Required!" ForeColor="Red" ControlToValidate="txtApptTime">*</asp:RequiredFieldValidator>
 
                 </div>
 
-                <div class="div9">
+                <div class="rcdiv1">
 
-                    <asp:Label ID="Label8" Text="Employee ID" runat="server" CssClass="lblLabels" />
+                    <asp:Label ID="Label8" Text="Employee ID" runat="server" CssClass="rclblLabels" />
 
-                    <asp:TextBox runat="server" CssClass="txtInputs" ID="txtEmpId" MaxLength="1"></asp:TextBox>
+                    <asp:TextBox runat="server" CssClass="rcInputs" ID="txtEmpId" MaxLength="1"></asp:TextBox>
                       <asp:RequiredFieldValidator ID="rfvEmpID" runat="server" ErrorMessage="Emp ID Required!" ForeColor="Red" ControlToValidate="txtEmpId">*</asp:RequiredFieldValidator>
                 </div>
 
-                <div class="btnDiv">
+                <div class="btnDiv-rc">
                     <asp:Button runat="server" Text="Generate" CssClass="Generate-Btn" ID="generatebutton" OnClick="generatebutton_Click" />
                     <asp:Button runat="server" Text="Update" CssClass="Update-Btn" ID="updatebutton" OnClick="updatebutton_Click" />
                     <asp:Button runat="server" Text="Cancel" CssClass="Cancel-Btn" ID="cancelbutton" OnClick="cancelbutton_Click" />
