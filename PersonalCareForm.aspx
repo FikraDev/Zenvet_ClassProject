@@ -29,11 +29,15 @@
                 <div class="pcfDiv1">
 
                     <div>
-                        <asp:TextBox runat="server" ID="txtPetID_PCF" class="PCFInput" placeholder="Enter Pet ID"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="txtPetID_PCF" class="PCFInput" placeholder="Enter Pet ID" MaxLength="25"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rvfPID" runat="server" ErrorMessage="Pet ID Required!" ForeColor="Red" ControlToValidate="txtPetID_PCF">*</asp:RequiredFieldValidator>
+
                     </div>
 
                     <div>
-                        <asp:TextBox runat="server" ID="txtEmpId_PCF" class="PCFInput" placeholder="Enter Employee ID"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="txtEmpId_PCF" class="PCFInput" placeholder="Enter Employee ID" MaxLength="10"></asp:TextBox>
+
+                        <asp:RequiredFieldValidator ID="rfvEmpID" runat="server" ErrorMessage="Emp ID Required!" ForeColor="Red" ControlToValidate="txtEmpId_PCF">*</asp:RequiredFieldValidator>
                     </div>
 
                     <div>
@@ -51,21 +55,12 @@
 
                     <div>
                         <asp:TextBox runat="server" ID="txtNextApptDate" class="PCFInput" placeholder="Enter Next Appointment Date (mm-dd-yyyy)"></asp:TextBox>
+                         <asp:RequiredFieldValidator ID="rfvDate" runat="server" ErrorMessage="Date Required!" ForeColor="Red" ControlToValidate="txtNextApptDate">*</asp:RequiredFieldValidator>
                     </div>
 
                     <div>
                         <asp:TextBox runat="server" ID="txtTimeofAppt" class="PCFInput" placeholder="Enter Appt Time (00:00)"></asp:TextBox>
-                    </div>
-
-
-
-                    <div class="PCFBtnDiv">
-                        <asp:Button runat="server" Text="Submit" ID="PCFSubmit" CssClass="pcfSbtn" OnClick="PCFSubmit_Click" />
-                        <asp:Button runat="server" Text="Cancel" ID="PCFCancel" CssClass="pcfCbtn" OnClick="PCFCancel_Click" />
-                    </div>
-
-                    <div>
-                        <asp:Label runat="server" ID="ErrorMessage" CssClass="errorMessageLabel"></asp:Label>
+                        <asp:RequiredFieldValidator ID="rvfTime" runat="server" ErrorMessage="Time Required!" ForeColor="Red" ControlToValidate="txtTimeofAppt">*</asp:RequiredFieldValidator>
                     </div>
 
                     <div>
@@ -76,6 +71,23 @@
                         <p>* Oral Care - $2000.00</p>
 
                     </div>
+
+
+
+                    <div class="PCFBtnDiv">
+                        <asp:Button runat="server" Text="Submit" ID="PCFSubmit" CssClass="pcfSbtn" OnClick="PCFSubmit_Click" />
+                        <asp:Button runat="server" Text="Cancel" ID="PCFCancel" CssClass="pcfCbtn" OnClick="PCFCancel_Click" />
+                    </div>
+
+
+                    <div>
+                        <asp:Label runat="server" ID="ErrorMessage" CssClass="errorMessageLabel"></asp:Label>
+                    </div>
+
+
+                     <asp:ValidationSummary ID="MySummary" runat="server" ForeColor="Red" />
+
+                    
 
 
                 </div>

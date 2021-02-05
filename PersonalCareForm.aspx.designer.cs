@@ -33,6 +33,15 @@ namespace ZenVet_20191021
         protected global::System.Web.UI.WebControls.TextBox txtPetID_PCF;
 
         /// <summary>
+        /// rvfPID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rvfPID;
+
+        /// <summary>
         /// txtEmpId_PCF control.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,15 @@ namespace ZenVet_20191021
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEmpId_PCF;
+
+        /// <summary>
+        /// rfvEmpID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvEmpID;
 
         /// <summary>
         /// servicesList control.
@@ -69,6 +87,15 @@ namespace ZenVet_20191021
         protected global::System.Web.UI.WebControls.TextBox txtNextApptDate;
 
         /// <summary>
+        /// rfvDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDate;
+
+        /// <summary>
         /// txtTimeofAppt control.
         /// </summary>
         /// <remarks>
@@ -76,6 +103,15 @@ namespace ZenVet_20191021
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTimeofAppt;
+
+        /// <summary>
+        /// rvfTime control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rvfTime;
 
         /// <summary>
         /// PCFSubmit control.
@@ -103,5 +139,14 @@ namespace ZenVet_20191021
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label ErrorMessage;
+
+        /// <summary>
+        /// MySummary control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary MySummary;
     }
 }

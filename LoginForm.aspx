@@ -45,6 +45,8 @@
                     <asp:Label runat="server" ID="ErrorMessage" CssClass="errorMessageLabel"></asp:Label>
                 </div>
 
+                 <asp:ValidationSummary ID="MySummary" runat="server" ForeColor="Red" />
+
 
 
 

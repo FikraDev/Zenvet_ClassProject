@@ -33,6 +33,15 @@ namespace ZenVet_20191021
         protected global::System.Web.UI.WebControls.TextBox txtPetID_MF;
 
         /// <summary>
+        /// rvfPID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rvfPID;
+
+        /// <summary>
         /// txtEmpId_MF control.
         /// </summary>
         /// <remarks>
@@ -42,6 +51,15 @@ namespace ZenVet_20191021
         protected global::System.Web.UI.WebControls.TextBox txtEmpId_MF;
 
         /// <summary>
+        /// rfvEmpID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvEmpID;
+
+        /// <summary>
         /// txtComplaint control.
         /// </summary>
         /// <remarks>
@@ -49,6 +67,15 @@ namespace ZenVet_20191021
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtComplaint;
+
+        /// <summary>
+        /// rfvcomplaint control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvcomplaint;
 
         /// <summary>
         /// treatmentList control.
@@ -130,5 +157,14 @@ namespace ZenVet_20191021
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label ErrorMessage;
+
+        /// <summary>
+        /// MySummary control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary MySummary;
     }
 }

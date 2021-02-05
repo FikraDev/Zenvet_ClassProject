@@ -15,8 +15,8 @@
                 <div class="div1">
 
                     <asp:Label ID="label0" Text="Pet Identification No." runat="server" CssClass="lblLabels" />
-
                     <asp:TextBox runat="server" CssClass="txtInputs" ID="txtPetID" MaxLength="25"></asp:TextBox>
+
 
                 </div>
 
