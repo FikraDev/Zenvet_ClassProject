@@ -11,7 +11,7 @@
 
             <form runat="server">
 
-                <asp:Literal runat="server"><h3 class="mapTitle">Please Select Customer Type</h3></asp:Literal>
+                <asp:Literal runat="server"><h3 class="appTitle">Please Select Customer Type</h3></asp:Literal>
 
                 <div class="retCustomer">
                     <asp:Button runat="server" Text="Returning Customer" CssClass="retCust-Btn" ID="returningCustomerBtn" OnClick="returningCustomerBtn_Click"/>

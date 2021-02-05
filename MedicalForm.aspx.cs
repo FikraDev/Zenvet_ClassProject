@@ -76,6 +76,8 @@ namespace ZenVet_20191021
                     txtSugeryDate.Text = "";
                     txtSurgeryTime.Text = "";
                     txtCost.Text = "";
+
+                    Response.AddHeader("REFRESH", "5;URL=MedicalForm.aspx");
                 }
             }
             catch(Exception ex)

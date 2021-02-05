@@ -70,6 +70,7 @@
     <Content Include="AppointmentSelectionForm.aspx" />
     <Content Include="Employees.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="indexHome.aspx" />
     <Content Include="LoginForm.aspx" />
     <Content Include="MedicalForm.aspx" />
     <Content Include="NewCustomerPage.aspx" />
@@ -95,6 +96,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="indexHome.aspx.cs">
+      <DependentUpon>indexHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="indexHome.aspx.designer.cs">
+      <DependentUpon>indexHome.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.aspx.cs">
       <DependentUpon>LoginForm.aspx</DependentUpon>
