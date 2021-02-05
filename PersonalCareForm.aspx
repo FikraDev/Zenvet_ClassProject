@@ -41,7 +41,7 @@
                             <asp:ListItem Text="Select Service Option" Value="0" />
                             <asp:ListItem Text="Bath-$2000.00" Value="2000" />
                             <asp:ListItem Text="Grooming-$1000.00" Value="1000" />
-                            <asp:ListItem Text="Oral Care-$2000.00" Value="2000" />
+                            <asp:ListItem Text="Oral Care-$2000.00" Value="2500" />
                         </asp:ListBox>
                     </div>
 

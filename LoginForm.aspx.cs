@@ -56,19 +56,19 @@ namespace ZenVet_20191021
 
                         if (selectList.SelectedValue == "1")
                         {
-                            Response.Redirect("https://www.cnn.com");
+                            Response.Redirect("LoginForm.aspx");
                         }
                         else if (selectList.SelectedValue == "2")
                         {
-                            Response.Redirect("https://www.nbc.com");
+                            Response.Redirect("MedicalForm.aspx");
                         }
                         else if (selectList.SelectedValue == "3")
                         {
-                            Response.Redirect("https://www.foxnews.com");
+                            Response.Redirect("PersonalCareForm.aspx");
                         }
                         else if (selectList.SelectedValue == "4")
                         {
-                            Response.Redirect("https://www.foxsports.com");
+                            Response.Redirect("AppointmentSelectionForm.aspx");
                         }
                     }
 

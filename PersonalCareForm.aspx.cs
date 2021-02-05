@@ -17,6 +17,8 @@ namespace ZenVet_20191021
         SqlConnection conn = new SqlConnection();
         protected void Page_Load(object sender, EventArgs e)
         {
+            CalCharges();
+
             conn.ConnectionString = str;
             ErrorMessage.Visible = true;
             conn.Open();
@@ -65,10 +67,10 @@ namespace ZenVet_20191021
 
                     txtPetID_PCF.Text = "";
                     txtEmpId_PCF.Text = "";
-                    servicesList.Text="";
-                    txtCost_PCF.Text="";
-                    txtNextApptDate.Text="";
-                    txtTimeofAppt.Text="";
+                    servicesList.ClearSelection();
+                    txtCost_PCF.Text = "";
+                    txtNextApptDate.Text = "";
+                    txtTimeofAppt.Text = "";
                 }
 
             }
@@ -84,7 +86,7 @@ namespace ZenVet_20191021
 
             txtPetID_PCF.Text = "";
             txtEmpId_PCF.Text = "";
-            servicesList.Text = "";
+            servicesList.ClearSelection();
             txtCost_PCF.Text = "";
             txtNextApptDate.Text = "";
             txtTimeofAppt.Text = "";
@@ -94,10 +96,18 @@ namespace ZenVet_20191021
         {
             double cost = 0;
 
-            foreach (ListItem listitem in servicesList.Items)
+            for (int i = 0; i < servicesList.Items.Count; i++)
             {
-                cost += Convert.ToDouble(servicesList.SelectedValue);
+                if (servicesList.Items[i].Selected)
+                {
+                    cost += Convert.ToDouble(servicesList.Items[i].Value);
+                }
             }
+
+
+
+            txtCost_PCF.Text = cost.ToString();
+
 
         }
     }
