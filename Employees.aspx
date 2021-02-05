@@ -28,7 +28,7 @@
                 </div>
 
                 <div>
-                      <asp:TextBox runat="server" CssClass="empInputs" ID="txtDOB" placeholder="Enter DOB"></asp:TextBox>
+                      <asp:TextBox runat="server" CssClass="empInputs" ID="txtDOB" placeholder="Enter DOB (mm/dd/yyyy)"></asp:TextBox>
                 </div>
 
                 <div>
@@ -48,7 +48,7 @@
                 </div>
 
                 <div>
-                      <asp:TextBox runat="server" CssClass="empInputs" ID="txtPwdEmp" placeholder="Enter Password"></asp:TextBox>
+                      <asp:TextBox runat="server" CssClass="empInputs" ID="txtPwdEmp" placeholder="Enter Password" TextMode="Password"></asp:TextBox>
                 </div>
 
                 <div class="EmpbtnDiv">

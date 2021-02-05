@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="medFromContainer">
+    <div class="medFormContainer">
         <div class="medFormContainerInner">
 
             <form runat="server">
@@ -15,7 +15,7 @@
                 <div>
 
                     <asp:GridView runat="server" ID="gvMedForm" AutoGenerateColumns="false" class="gridx">
-                        <columns>
+                        <Columns>
                             <asp:BoundField DataField="PetId" HeaderText="Pet ID No." />
                             <asp:BoundField DataField="EmpId" HeaderText="Employee ID No." />
                             <asp:BoundField DataField="Complaint" HeaderText="Complaint" />
@@ -24,7 +24,7 @@
                             <asp:BoundField DataField="SurgeryDate" HeaderText="Surgery Date" />
                             <asp:BoundField DataField="SurgeryTime" HeaderText="Surgery Time" />
                             <asp:BoundField DataField="Cost" HeaderText="Cost" />
-                        </columns>
+                        </Columns>
                     </asp:GridView>
                 </div>
 
@@ -73,13 +73,20 @@
                     </div>
 
                     <div class="medFormBtnDiv">
-                        <asp:Button runat="server" Text="Submit" id="medformSubmit" CssClass="medfrmSbtn" OnClick="medformSubmit_Click"/>
-                        <asp:Button runat="server" Text="Cancel" id="medformCancel" CssClass="medfrmCbtn" OnClick="medformCancel_Click"/>
+                        <asp:Button runat="server" Text="Submit" ID="medformSubmit" CssClass="medfrmSbtn" OnClick="medformSubmit_Click" />
+                        <asp:Button runat="server" Text="Cancel" ID="medformCancel" CssClass="medfrmCbtn" OnClick="medformCancel_Click" />
                     </div>
 
                     <div>
-                    <asp:Label runat="server" ID="ErrorMessage" CssClass="errorMessageLabel"></asp:Label>
-                </div>
+                        <asp:Label runat="server" ID="ErrorMessage" CssClass="errorMessageLabel"></asp:Label>
+                    </div>
+
+                    <div>
+                        <asp:Literal runat="server"><h3 class="costTitle1">Treatment Costs</h3></asp:Literal>
+
+                        <p>* Bath - $2000.00</p>
+                        <p>* Grooming - $1000.00</p>
+                    </div>
 
 
                 </div>

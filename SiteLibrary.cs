@@ -173,8 +173,6 @@ namespace ZenVet_20191021
                         cmd.Parameters.Add("@SurgeryDate", SqlDbType.DateTime);
                         cmd.Parameters.Add("@SurgeryTime", SqlDbType.DateTime);
                     }
-                    //cmd.Parameters.Add("@SurgeryDate", SqlDbType.DateTime);
-                    //cmd.Parameters.Add("@SurgeryTime", SqlDbType.DateTime);
                     cmd.Parameters.Add("@Cost", SqlDbType.Money);
                     
                     
@@ -188,6 +186,54 @@ namespace ZenVet_20191021
                     cmd.Parameters["@SurgeryDate"].Value = medicalArray[6];
                     cmd.Parameters["@SurgeryTime"].Value = medicalArray[7];
                     cmd.Parameters["@Cost"].Value = medicalArray[8];
+                   
+
+                    int x = cmd.ExecuteNonQuery();
+                    if (x > 0)
+                    {
+                        status = true;
+                        conn.Close();
+                    }
+                }
+
+            }
+
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return status;
+        }
+
+        public bool spAddPersonalCare(string[] pcArray, string spAddPersonalCare)
+        {
+            bool status = false;
+
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["newconn"].ToString()))
+                {
+                    SqlCommand cmd = new SqlCommand("spAddPersonalCare", conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    if (conn.State == ConnectionState.Closed)
+                    {
+                        conn.Open();
+                    }
+
+                    cmd.Parameters.Add("@PetId", SqlDbType.NVarChar, 25, "PetId");
+                    cmd.Parameters.Add("@EmpId", SqlDbType.NVarChar, 10, "EmpId");
+                    cmd.Parameters.Add("@ServicesPerformed", SqlDbType.NVarChar, 255, "ServicesPerformed");
+                    cmd.Parameters.Add("@Cost", SqlDbType.Money, 100, "Cost");
+                    cmd.Parameters.Add("@NextAppt", SqlDbType.Date);
+                    cmd.Parameters.Add("@TimeofAppt", SqlDbType.Time);              
+
+                    cmd.Parameters["@PetId"].Value = pcArray[0];
+                    cmd.Parameters["@EmpId"].Value = pcArray[1];
+                    cmd.Parameters["@ServicesPerformed"].Value = pcArray[2];
+                    cmd.Parameters["@Cost"].Value = pcArray[3];
+                    cmd.Parameters["@NextAppt"].Value = pcArray[4];
+                    cmd.Parameters["@TimeofAppt"].Value = pcArray[5];                
                    
 
                     int x = cmd.ExecuteNonQuery();
