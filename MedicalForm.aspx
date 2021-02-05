@@ -46,8 +46,8 @@
                     <div>
                         <asp:DropDownList runat="server" ID="treatmentList" CssClass="ddlist2" AutoPostBack="True">
                             <asp:ListItem Value="0">Select Treatment Option</asp:ListItem>
-                            <asp:ListItem Value="Medication">Medication</asp:ListItem>
-                            <asp:ListItem Value="Operation">Operation</asp:ListItem>
+                            <asp:ListItem Value="M">Medication</asp:ListItem>
+                            <asp:ListItem Value="O">Operation</asp:ListItem>
                         </asp:DropDownList>
                     </div>
 

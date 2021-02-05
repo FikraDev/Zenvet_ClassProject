@@ -154,14 +154,27 @@ namespace ZenVet_20191021
                         conn.Open();
                     }
 
+                    SqlParameter paramx = new SqlParameter("@SurgeryDate", medicalArray[6]);
+                    SqlParameter paramv = new SqlParameter("@SurgeryTime", medicalArray[7]);
+
                     cmd.Parameters.Add("@PetId", SqlDbType.NVarChar, 25, "PetId");
                     cmd.Parameters.Add("@EmpId", SqlDbType.NVarChar, 10, "EmpId");
                     cmd.Parameters.Add("@Complaint", SqlDbType.NVarChar, 255, "Complaint");
                     cmd.Parameters.Add("@TreatmentOption", SqlDbType.NVarChar, 255, "TreatmentOption");
                     cmd.Parameters.Add("@Drug", SqlDbType.NVarChar, 255, "Drug");
                     cmd.Parameters.Add("@Dosage", SqlDbType.Int);
-                    cmd.Parameters.Add("@SurgeryDate", SqlDbType.DateTime);
-                    cmd.Parameters.Add("@SurgeryTime", SqlDbType.DateTime);
+                    if (medicalArray[6] == "" && medicalArray[7] == "")
+                    {
+                        cmd.Parameters.Add(paramx).Value = DBNull.Value;
+                        cmd.Parameters.Add(paramv).Value = DBNull.Value;
+                    }
+                    else
+                    {
+                        cmd.Parameters.Add("@SurgeryDate", SqlDbType.DateTime);
+                        cmd.Parameters.Add("@SurgeryTime", SqlDbType.DateTime);
+                    }
+                    //cmd.Parameters.Add("@SurgeryDate", SqlDbType.DateTime);
+                    //cmd.Parameters.Add("@SurgeryTime", SqlDbType.DateTime);
                     cmd.Parameters.Add("@Cost", SqlDbType.Money);
                     
                     

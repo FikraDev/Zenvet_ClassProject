@@ -17,6 +17,9 @@ namespace ZenVet_20191021
         SqlConnection conn = new SqlConnection();
         protected void Page_Load(object sender, EventArgs e)
         {
+            hideControl();
+           
+
             conn.ConnectionString = str;
             ErrorMessage.Visible = true;
             conn.Open();
@@ -76,7 +79,7 @@ namespace ZenVet_20191021
                 }
             }
             catch(Exception ex)
-            {
+            {   
                 throw ex;
             }
 
@@ -94,5 +97,28 @@ namespace ZenVet_20191021
             txtSurgeryTime.Text = "";
             txtCost.Text = "";
         }
+
+        public void hideControl()
+        {
+            if (treatmentList.SelectedValue == "M")
+            {
+                int sum = 5000;
+                txtSugeryDate.Enabled = false;
+                txtSurgeryTime.Enabled = false;
+                txtCost.Text = sum.ToString("0.##");
+
+            }
+
+            else if(treatmentList.SelectedValue == "O")
+            {
+                int sum = 10000 + 5000;
+                txtCost.Text = sum.ToString("0.##");
+                txtSugeryDate.Enabled = true;
+                txtSurgeryTime.Enabled = true;
+            }
+
+        }
+
+       
     }
 }
