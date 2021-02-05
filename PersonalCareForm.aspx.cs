@@ -89,5 +89,16 @@ namespace ZenVet_20191021
             txtNextApptDate.Text = "";
             txtTimeofAppt.Text = "";
         }
+
+        public void CalCharges()
+        {
+            double cost = 0;
+
+            foreach (ListItem listitem in servicesList.Items)
+            {
+                cost += Convert.ToDouble(servicesList.SelectedValue);
+            }
+
+        }
     }
 }

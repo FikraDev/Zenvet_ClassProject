@@ -84,8 +84,8 @@
                     <div>
                         <asp:Literal runat="server"><h3 class="costTitle1">Treatment Costs</h3></asp:Literal>
 
-                        <p>* Bath - $2000.00</p>
-                        <p>* Grooming - $1000.00</p>
+                        <p>* Medication - $5000.00</p>
+                        <p>* Operation - $10000.00</p>
                     </div>
 
 
