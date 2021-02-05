@@ -56,6 +56,10 @@
                     <div>
                         <asp:TextBox runat="server" ID="txtNextApptDate" class="PCFInput" placeholder="Enter Next Appointment Date (mm-dd-yyyy)"></asp:TextBox>
                          <asp:RequiredFieldValidator ID="rfvDate" runat="server" ErrorMessage="Date Required!" ForeColor="Red" ControlToValidate="txtNextApptDate">*</asp:RequiredFieldValidator>
+
+                        <asp:RegularExpressionValidator ValidationExpression="^([0-9]|0[1-9]|1[012])\/([0-9]|0[1-9]|[12][0-9]|3[01])\/(19|20)\d\d$"
+                        ControlToValidate="txtNextApptDate" ErrorMessage="Invalid Format. Use MM/DD/YYYY" runat="server" CssClass="RegExVal">
+                    </asp:RegularExpressionValidator>
                     </div>
 
                     <div>
