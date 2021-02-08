@@ -150,6 +150,8 @@
     <Compile Include="SiteLibrary.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DataBase\ZenVet Database" />
+    <Content Include="DataBase\ZenVet Database - OtherBackup" />
     <None Include="packages.config" />
     <Content Include="MasterPage.Master" />
     <None Include="Web.Debug.config">
